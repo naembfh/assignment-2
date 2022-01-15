@@ -1,0 +1,168 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,500&display=swap');
+
+/* utilities */
+body{
+    background-color: #ffff;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    width: 1050px;
+    height: 1700px;
+    margin-left: 80px;
+    box-shadow: 2px 2px rgb(245, 241, 241);
+    padding-bottom: 200px;
+}
+/* navigation */
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+.menu ul{
+    display: flex;
+    list-style: none;
+}
+li a{
+    margin-left: 20px;
+}
+/* influencer */
+.influencer{
+    display: flex;
+    margin-left: 130px;
+    margin-right: 120px;
+}
+.journey{
+    width: 582px;
+    height: 270px;
+}
+.book{
+    width: 180px;
+    background-color: #E02C6D;
+    border-radius: 8px;
+    text-align: center;
+    padding: 15px 20px;
+}
+
+.book a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.influencer-thumb img{
+    width: 440px;
+    height: 414px;
+}
+/* popular collection */
+#collect-tittle{
+    text-align: center;
+    margin: 50px;
+}
+.collections .collection{
+    box-shadow: 5px 10px 8px 10px #888888;
+
+}
+.collections{
+       display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+        padding-bottom: 30px;
+}
+.collection{
+    width: 329px;
+    height: 550px;
+    padding: 3px 5px;
+}
+.collection img{
+    width: 100%;
+}
+.filled{
+    color: goldenrod;
+}
+.empty{
+    color: gray;
+}
+
+.more a{
+text-decoration: none;
+color: #E02C6DDE;
+font-size: larger;
+font-weight: 900;
+}
+.more p{
+    text-align: right;
+}
+
+
+/* footer */
+footer{
+   height: 200px;
+    background-color: #0A0826;
+    text-align: center;
+    
+}
+    
+.footer-text p{
+    padding: 80px;
+    color: white;
+}
+/* media query */
+/* mobile device */
+@media only screen and (max-width:600px) {
+    .nav-container{
+        flex-direction: column;
+        
+    }
+    .products{
+        text-align: center;
+       
+    }
+    .influencer{
+        height: 700px;
+        flex-direction:column;
+        column-gap: 30px;
+    }
+    .journey{
+        width: 300px;
+        height: 450px;
+       
+
+    }
+    .influencer-thumb img{
+        width: 257px;
+
+height: 257px;
+    }
+    .container{
+        width: 400px;
+        height: 6000px;
+        padding-right: 15px;
+    }
+    .collections{
+        grid-template-columns: repeat(1, 1fr);
+        
+     
+    }
+    .collection{
+        width: 90%;
+    }
+    
+}
+/* tablet device */
+@media only screen and (min-width:600px) and (max-width:990px) {
+    nav{
+        height: 40px;
+        width: 700px;
+    }
+    .influencer{
+        height: 650px;
+    }
+    .container{
+        height: 2850px;
+        width: 600px;
+    }
+    .collections{
+        grid-template-columns: repeat(2, 1fr);
+       
+}
